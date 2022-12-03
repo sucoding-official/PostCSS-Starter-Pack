@@ -1,0 +1,67 @@
+.icon.is-twitter {
+    color: blue;
+  background: url(twt.png);
+  }
+
+.icon.is-twitter:hover {
+    color: white;
+    background: blue;
+  }
+
+.icon.is-youtube {
+    color: red;
+  background: url(youtube.png);
+  }
+
+.icon.is-youtube:hover {
+    color: white;
+    background: red;
+  }
+
+.search {
+  padding-left: 16px;
+}
+
+.search::after {
+    content: "";
+    background: url(/icons/search.png);
+  }
+
+:root {
+  --mainColor: #12345678;
+}
+
+body {
+  color: var(--mainColor);
+  font-family: system-ui;
+}
+
+a {
+  color: rgb(0 0 100% / 90%);
+}
+
+a:hover {
+    color: rebeccapurple;
+  }
+
+a span {
+    font-weight: bold;
+  }
+
+:is(input, button):is(:hover, :focus) {
+  color: oklch(40% 0.268735435 34.568626);
+}
+
+::placeholder {
+  color: gray;
+}
+
+.image {
+  background-image: url(image@1x.png);
+}
+
+@media (min-resolution: 2dppx) {
+  .image {
+    background-image: url(image@2x.png);
+  }
+}
